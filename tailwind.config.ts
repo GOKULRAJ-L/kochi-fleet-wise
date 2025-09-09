@@ -19,9 +19,13 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        surface: "hsl(var(--surface))",
+        "surface-elevated": "hsl(var(--surface-elevated))",
+        
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -46,17 +50,35 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+          elevated: "hsl(var(--card-elevated))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        
+        // Metro Status Colors
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          glow: "hsl(var(--success-glow))",
         },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          glow: "hsl(var(--warning-glow))",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger))",
+          glow: "hsl(var(--danger-glow))",
+        },
+        info: "hsl(var(--info))",
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-surface": "var(--gradient-surface)",
+        "gradient-status-success": "var(--gradient-status-success)",
+        "gradient-status-warning": "var(--gradient-status-warning)",
+        "gradient-status-danger": "var(--gradient-status-danger)",
+      },
+      boxShadow: {
+        "metro": "var(--shadow-metro)",
+        "card": "var(--shadow-card)",
+        "elevated": "var(--shadow-elevated)",
       },
       borderRadius: {
         lg: "var(--radius)",
